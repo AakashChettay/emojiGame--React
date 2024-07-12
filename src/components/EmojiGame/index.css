@@ -1,0 +1,27 @@
+.emoji-game-bgContainer {
+  background-color: #9796f0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+  min-width: 100vw;
+}
+
+.emoji-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 60vw;
+  justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .emoji-list {
+    width: 100%;
+  }
+}

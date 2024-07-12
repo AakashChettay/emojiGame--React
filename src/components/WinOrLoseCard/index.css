@@ -1,0 +1,151 @@
+.card {
+  background-color: #bab8ee;
+  border-style: solid;
+  border-width: 4px;
+  border-color: #ffffff30;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  width: 50vw;
+  height: 70vh;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.resultDisplayContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 30px;
+  padding-top: 30px; /* Optional: adds some space at the top */
+  padding-bottom: 30px; /* Optional: adds some space at the bottom */
+  margin-right: 20px;
+}
+
+.resHead {
+  font-family: roboto;
+  font-size: 60px;
+  color: #ffffff;
+  font-weight: 600;
+  margin-top: 50px;
+  /* Reduced margin */
+  margin-bottom: 0px;
+}
+
+.resPara {
+  font-family: roboto;
+  font-size: 50px;
+  color: #ffffff;
+  font-weight: 500;
+  margin-bottom: 10px; /* Reduced margin */
+}
+
+.scoreStyle {
+  color: #6a59ff;
+  font-family: roboto;
+  font-size: 52px;
+  font-weight: 600;
+  margin-bottom: 0px; /* Reduced margin */
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.play-again-btn {
+  background-color: #ffce27;
+  width: 120px;
+  height: 50px;
+  color: #3d3d3d;
+  font-size: 18px;
+  margin-top: 15px; /* Adjusted margin */
+  border-radius: 14px;
+  font-family: roboto;
+  margin-bottom: 40px; /* Adjusted margin */
+}
+
+@media (min-width: 768px){
+  .resultImage{
+    order: 2;
+  }
+  .resultDisplayContainer{
+    order: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .card {
+    width: 85vw;
+    height: 60vh;
+    flex-direction: column;
+  }
+
+  .resultImage {
+    width: 50%;
+    order: 0;
+  }
+
+  .resultDisplayContainer {
+    margin-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    order: 1;
+  }
+
+  .resHead {
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 5px; /* Adjusted margin */
+  }
+
+  .resPara {
+    font-size: 32px;
+    margin-bottom: 5px; /* Adjusted margin */
+    margin-top: 20px;
+  }
+
+  .scoreStyle {
+    font-size: 36px;
+    margin-bottom: 10px; /* Adjusted margin */
+    margin-top: 0px;
+  }
+
+  .play-again-btn {
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    margin-top: 10px; /* Adjusted margin */
+    margin-bottom: 40px; /* Adjusted margin */
+  }
+}
+
+@media (max-width: 480px) {
+  .resHead {
+    font-size: 32px;
+    margin-top: 10px;
+    margin-bottom: 10px; /* Adjusted margin */
+  }
+
+  .resPara {
+    font-size: 28px;
+    margin-bottom: 10px; /* Adjusted margin */
+    margin-top: 10px;
+  }
+
+  .scoreStyle {
+    font-size: 28px;
+    margin-bottom: 5px; /* Adjusted margin */
+    margin-top: 5px;
+  }
+
+  .play-again-btn {
+    width: 90px;
+    height: 35px;
+    font-size: 14px;
+    margin-top: 5px; /* Adjusted margin */
+    margin-bottom: 30px; /* Adjusted margin */
+  }
+  .resultDisplayContainer{
+    order: 1;
+  }
+}

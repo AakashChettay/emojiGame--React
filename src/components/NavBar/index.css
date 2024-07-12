@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #bab9f0;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.logoCon {
+  display: flex;
+  align-items: center;
+}
+
+.navText {
+  font-family: roboto;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.scoreCon {
+  display: flex;
+  align-items: center;
+}
+
+.score,
+.top-score {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: roboto;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .logoCon {
+    margin-left: 0;
+  }
+
+  .scoreCon {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .top-score,
+  .score {
+    font-size: 12px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .navbar {
+    font-size: 14px;
+  }
+}
